@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title2</title>
+  <script src="https://cdn.staticfile.org/vue/2.4.2/vue.min.js"></script>
+</head>
+<body>
+<div id="vue_dt">
+  <ul>
+    <li>{{url}}</li>
+    <li>{{details()}}</li>
+  </ul>
+</div>
+<script type="text/javascript">
+  var vm = new Vue({
+    el:'#vue_dt',
+    data:{
+        url:'beijing'
+    },
+    methods:{
+        details:function () {
+          return this.url+"xxxxxxxxxxxxxxxx";
+        }
+    }
+  })
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>test vue label</title>
+  <script src="https://cdn.staticfile.org/vue/2.4.2/vue.min.js"></script>
+</head>
+<body>
+<div id="app1" v-html="message" v-b>
+</div>
+<p v-text="da" v>{{da}}</p>
+
+<div id>
+
+</div>
+<script type="text/javascript">
+  var vm = new Vue({
+    el: '#app1',
+    data: {
+      message: 'va',
+      da:'hello'
+    }
+  })
+  var vm1 = new Vue({
+    el: '#app1',
+    data: {
+      message: 'va',
+      da:'hello'
+    }
+  })
+</script>
+</body>
+</html>
